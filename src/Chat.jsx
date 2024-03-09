@@ -8,7 +8,10 @@ function Chat() {
       </header>
       <ul className="chatbox">
         <li className="chat incoming">
-          <span className="material-symbols-outlined"></span>
+          <span>
+             
+            <img src="src/assets/logo-chatbot.png" alt="Logo" className="logo" />
+          </span>
           <p>
             Hi there <br></br>How can I help you today?
           </p>

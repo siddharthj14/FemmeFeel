@@ -22,7 +22,7 @@ function Header() {
   return (
     <div className="header">
       <img src="src/assets/logo.png" alt="Logo" className="logo" />
-      <div className="title skranji-bold">FemmeFeel</div>
+      <div className="title skranji-bold">Femme<span className="white">Feel</span></div>
       <div className="banner skranji-regular" id="demo">
         {text}
       </div>

@@ -9,7 +9,8 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div className="all">
+    {/* <img src="src\assets\intro.jpg" className="intro"></img> */}
       <Header />
       <section className="main">
         <Video />

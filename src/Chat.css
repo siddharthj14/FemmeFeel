@@ -1,7 +1,7 @@
 .chatBot {
   height: 500px;
   width: 400px;
-  background: #fff;
+  background: #FAF9F6;
   border-radius: 15px;
   box-shadow: 0 0 128px rgba(0, 0, 0, 0.102),
     0 32px 64px -48px rgba(0, 0, 0, 0.5);
@@ -44,6 +44,11 @@ header h2 {
   margin: 0 10px 7px 0;
   cursor: default;
 }
+
+.incoming img{
+    height: 100%;
+}
+
 .outgoing {
   justify-content: flex-end;
   margin: 20px 0;
@@ -59,7 +64,7 @@ header h2 {
 
 .incoming p {
   color: #000;
-  background-color: #f2f2f2;
+  background-color: #e5e5e5;
   border-radius: 10px 10px 0 10px;
 }
 
@@ -72,31 +77,27 @@ header h2 {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 50px;
 }
 
 textarea {
-  height: 55px;
+  /* height: 55px; */
   width: 100%;
-  max-height: 180px;
+  /* max-height: 180px; */
   border: none;
   outline: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
   resize: none;
-  padding: 16px 15px 16px 0;
+  padding: 10px 15px 10px 0;
   width: 100%;
 }
 
 .chat-input span {
   color: #724ae8;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   align-self: flex-end;
-  height: 55px;
-  line-height: 55px;
+  margin-bottom: 5px;
   cursor: pointer;
-  visibility: hidden;
-}
-textarea:valid ~ span {
-  visibility: visible;
 }
 
 .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
