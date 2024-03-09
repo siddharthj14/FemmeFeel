@@ -1,0 +1,17 @@
+.footer {
+  background-color: #7469b6;
+  height: 5vh;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+
+.skranji-regular {
+  font-family: "Skranji", system-ui;
+  font-style: normal;
+}

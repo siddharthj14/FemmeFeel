@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #7469b6;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 80px;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.title:hover {
+  transform: scale(1.1);
+  text-shadow: 0px 0px 5px white;
+}
+.banner {
+  font-size: 30px;
+  color: #fff;
+  margin-left: 400px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.skranji-regular {
+  font-family: "Skranji", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.skranji-bold {
+  font-family: "Skranji", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
