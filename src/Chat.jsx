@@ -10,7 +10,6 @@ function Chat() {
     setUserMessage(e.target.value);
     setInputHeight(`${e.target.scrollHeight}px`);
   };
-  
 
   const handleSendChat = () => {
     const message = userMessage.trim();
@@ -19,13 +18,26 @@ function Chat() {
       ...prevMessages,
       { content: message, type: "outgoing" },
     ]);
-    setUserMessage(""); 
-    setInputHeight("auto"); 
-    generateResponse(message);
+    const response = generateResponse(message);
+    setChatMessages((prevMessages) => [
+      ...prevMessages,
+      { content: response, type: "incoming" },
+    ]);
+    setUserMessage("");
+    setInputHeight("auto");
   };
 
   const generateResponse = (userMessage) => {
-    return "userMessage !!";
+    switch (userMessage.toLowerCase()) {
+      case "hello":
+        return "Hi there! How can I assist you today?";
+      case "how are you?":
+        return "I'm just a bot, but thanks for asking!";
+      case "goodbye":
+        return "Goodbye! Have a great day!";
+      default:
+        return "I'm sorry, I didn't understand that. Can you please rephrase?";
+    }
   };
 
   return (

@@ -17,10 +17,6 @@ body {
   color: white;
 }
 
-.white:hover{
-  color: black;
-}
-
 .logo {
   height: 80px;
   margin-right: 20px;
@@ -35,10 +31,9 @@ body {
 .logo:hover{
   transform: scale(1.1);
 }
-
 .title:hover {
   transform: scale(1.1);
-  color: white;
+  filter: invert(1);
 }
 .banner {
   font-size: 30px;

@@ -7,13 +7,15 @@ import Footer from "./Footer";
 
 function App() {
   const [count, setCount] = useState(0);
-
   return (
     <div className="all">
-    {/* <img src="src\assets\intro.jpg" className="intro"></img> */}
+      <div className="intro">
+        <img src="src/assets/logo.png" alt="Logo" className="intro-logo" />
+        <article className="skranji-bold">Welcome to FemmeFeel!</article>
+      </div>
       <Header />
       <section className="main">
-        <Video />
+        <Video/>
         <Chat />
       </section>
       <Footer />
