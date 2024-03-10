@@ -7,9 +7,10 @@ function Chat() {
   const [chatMessages, setChatMessages] = useState([]);
 
   const handleInputChange = (e) => {
-    setUserMessage(e.target.value.trim());
+    setUserMessage(e.target.value);
     setInputHeight(`${e.target.scrollHeight}px`);
   };
+  
 
   const handleSendChat = () => {
     const message = userMessage.trim();
@@ -18,8 +19,8 @@ function Chat() {
       ...prevMessages,
       { content: message, type: "outgoing" },
     ]);
-    setUserMessage(""); // Clear the input textarea
-    setInputHeight("auto"); // Reset input textarea height
+    setUserMessage(""); 
+    setInputHeight("auto"); 
     generateResponse(message);
   };
 
